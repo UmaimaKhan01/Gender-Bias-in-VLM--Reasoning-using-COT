@@ -47,7 +47,7 @@ This document provides bibliographic references for the key resources used or re
 - URL: [https://github.com/ExplainableML/vla-gender-bias](https://github.com/ExplainableML/vla-gender-bias)
 - License: CC BY 4.0
 
-## Flickr30k Dataset (Optional)
+## Flickr30k Dataset
 
 **Paper:** 
 ```bibtex
@@ -61,20 +61,4 @@ This document provides bibliographic references for the key resources used or re
 }
 ```
 
-**Dataset:** 
-- URL: [https://shannon.cs.illinois.edu/DenotationGraph/](https://shannon.cs.illinois.edu/DenotationGraph/)
 
-## How to Cite This Project
-
-If you use this project in your research, please cite it as follows:
-
-```bibtex
-@misc{gender-bias-vla-detection,
-  title={Gender Bias Detection in Vision-Language Models using LlamaV-o1},
-  author={[Your Name]},
-  year={2025},
-  howpublished={\url{https://github.com/[username]/[repository]}}
-}
-```
-
-Replace `[Your Name]` and the URL with the appropriate information.
