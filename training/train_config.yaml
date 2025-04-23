@@ -1,0 +1,39 @@
+# Configuration for fine-tuning LlamaV-o1 on gender bias detection task
+
+# Model information
+model_name: "omkarthawakar/LlamaV-o1"  # HuggingFace model ID for LlamaV-o1
+
+# Data paths
+train_data: "training/data/train_annotations.jsonl"  # Path to training data
+validation_data: "training/data/val_annotations.jsonl"  # Path to validation data
+image_dir: "training/data/images"  # Directory containing images
+
+# Output settings
+output_dir: "models/llamav_o1_bias_detector"  # Directory to save model checkpoints
+
+# Training hyperparameters
+seed: 42  # Random seed for reproducibility
+num_epochs: 3  # Number of training epochs
+batch_size: 4  # Batch size for training and evaluation
+gradient_accumulation_steps: 4  # Accumulate gradients over multiple steps (effective batch size = batch_size * gradient_accumulation_steps)
+learning_rate: 2e-5  # Learning rate
+weight_decay: 0.01  # Weight decay for regularization
+warmup_steps: 100  # Number of warmup steps for learning rate scheduler
+max_length: 512  # Maximum sequence length for tokenization
+
+# Logging and checkpointing
+logging_steps: 10  # Log training metrics every N steps
+save_steps: 100  # Save checkpoint every N steps
+save_total_limit: 3  # Maximum number of checkpoints to keep
+eval_steps: 100  # Evaluate model every N steps
+report_to: "tensorboard"  # Report training metrics to TensorBoard
+
+# Performance optimization
+fp16: true  # Use mixed precision training if available
+lora_config:  # Low-Rank Adaptation settings for efficient fine-tuning
+  r: 8  # LoRA attention dimension
+  lora_alpha: 16  # LoRA alpha parameter
+  target_modules: ["q_proj", "v_proj"]  # Modules to apply LoRA to
+  lora_dropout: 0.05  # Dropout probability for LoRA layers
+  bias: "none"  # Add bias to the LoRA layers
+  task_type: "CAUSAL_LM"  # Task type (for LLMs)
