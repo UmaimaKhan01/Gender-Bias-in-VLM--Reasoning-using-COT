@@ -44,8 +44,7 @@ This document provides bibliographic references for the key resources used or re
 ```
 
 **Repository:** 
-- URL: [https://github.com/ExplainableML/vla-gender-bias](https://github.com/ExplainableML/vla-gender-bias)
-- License: CC BY 4.0
+- URL: [(https://github.com/UmaimaKhan01/Gender-Bias-in-VLM--Reasoning-using-COT)]
 
 ## Flickr30k Dataset
 
