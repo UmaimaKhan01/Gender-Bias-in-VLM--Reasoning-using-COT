@@ -1,0 +1,19 @@
+# Ignore model weight files
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.safetensors
+
+# Ignore model directories but keep the README
+*/*
+!README.md
+
+# Ignore specific files
+llamav_o1_bias_detector.bin
+llamav_o1_finetuned.bin
+clip_baseline_classifier.pkl
+
+# Keep Git directories
+!.git*
