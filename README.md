@@ -7,7 +7,7 @@ We propose an explainable system for detecting gender bias in vision-language mo
 ![image](https://github.com/user-attachments/assets/04755eb9-a920-4d9c-a003-1fd6d66d6232)
 
 
-In artificial intelligence (AI) systems, detecting bias in multimodal image-caption pair data is a difficult and urgent
+In AI systems, detecting bias in multimodal image-caption pair data is a difficult and urgent
 problem. When text or images overstate, misrepresent, or
 emphasize particular parts of a story, bias may be evident. Models that are capable of determining and evaluating complex semantic links between textual and visual
 material are necessary for effective detection. In order to
